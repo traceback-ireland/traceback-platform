@@ -1,0 +1,5 @@
+@import './tokens.css';
+@import 'tailwindcss';
+
+/* small helpers to keep spacing consistent */
+body { margin: 0 }

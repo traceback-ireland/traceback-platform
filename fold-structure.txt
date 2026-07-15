@@ -1,0 +1,19 @@
+traceback-ireland/
+├── src/
+│   ├── features/
+│   │   ├── auth/              ← the registration form goes here
+│   │   │   └── RegistrationForm.jsx
+│   │   ├── hot-report/
+│   │   ├── cold-report/
+│   │   ├── witness-report/
+│   │   └── pre-registration/
+│   ├── components/            ← shared UI (buttons, inputs, stamps)
+│   ├── styles/
+│   │   └── tokens.css         ← the color/font CSS vars, pulled out of the form
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── package.json
+├── tailwind.config.js
+├── postcss.config.js
+└── .gitignore
