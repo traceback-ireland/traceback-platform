@@ -1,17 +1,26 @@
 # traceback-platform
+
 A community-driven open-source proposal designed to streamline device theft reporting and provide actionable intelligence to An Garda Síochána.
 
-Frontend scaffold
+## Official Tech Stack (MVP)
+- *Front-End:* React (Vite / Tailwind CSS)
+- *Back-End:* FastAPI (Python)
+- *Database:* PostgreSQL
+
+---
+
+## Frontend Scaffold
 
 This repo includes a minimal Vite + React frontend scaffold for the registration form demo.
 
-Quick start (from repository root):
-
+### Quick start (from repository root):
 ```bash
-cd traceback-platform
+cd traceback-platform/frontend
 npm install
 npm run dev
-# open http://localhost:5173
+# open http://localhost:5173 
+
+
 ```
 
 Files of interest:
