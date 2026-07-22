@@ -1,7 +1,6 @@
 version: '3.8'
 
 services:
-  # Banco de dados PostgreSQL
   postgres:
     image: postgres:15-alpine
     container_name: traceback-db
@@ -21,7 +20,6 @@ services:
     networks:
       - traceback-network
 
-  # Backend FastAPI
   backend:
     build:
       context: ./backend
@@ -42,7 +40,7 @@ services:
       - ./backend:/app
     networks:
       - traceback-network
-    command: uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
+    command: uvicorn src.main:app --host 0.0.0.0 --port 8000
 
 volumes:
   postgres_data:
