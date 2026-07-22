@@ -24,7 +24,7 @@ npm run dev
 ```
 
 Files of interest:
-- `src/features/auth/RegistrationForm.jsx` — the registration component
-- `src/styles/tokens.css` — CSS variables used by the form
+- `frontend/src/features/auth/RegistrationForm.jsx` — the registration component
+- `frontend/src/styles/tokens.css` — CSS variables used by the form
 - `index.html`, `tailwind.config.js`, `postcss.config.js` — Vite/Tailwind setup
 
