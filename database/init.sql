@@ -80,7 +80,7 @@ CREATE TABLE incidents (
         ON DELETE CASCADE,
 
     CONSTRAINT fk_incidents_device
-        FOREIGN KEY (user_id)
+        FOREIGN KEY (device_id)
         REFERENCES devices(id)
         ON DELETE CASCADE
 );
