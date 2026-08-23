@@ -1,35 +1,4 @@
-
-# ==========================================
-# REGRAS DO FRONT-END (React/Node)
-# ==========================================
-frontend/node_modules/
-frontend/dist/
-frontend/build/
-frontend/out/
-frontend/.env
-frontend/.env.local
-frontend/.env.*.local
-frontend/*-debug.log*
-frontend/*-error.log*
-
-# ==========================================
-# REGRAS DO BACK-END (Python)
-# ==========================================
-backend/__pycache__/
-backend/*.pyc
-backend/*.pyo
-backend/*.pyd
-backend/.pytest_cache/
-backend/.venv/
-backend/venv/
-backend/env/
-backend/.env
-
-# ==========================================
-# REGRAS GERAIS DE SISTEMA E IDES
-# ==========================================
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-*.log
+venv/
+.env
+__pycache__/
+*.pyc
