@@ -24,14 +24,14 @@ def create_emergency_incident(
 ):
     # Garante que a Latitude esteja dentro dos limites geográficos válidos
     if not -90 <= incident.latitude <= 90:
-        raise HTTPExeption(
+        raise HTTPException(
             status_code=400,
             detail="Invalid latitude."
         )
 
     # Garante que o Longitude esteja dentro dos limites geográficos válidos
     if not -180 <= incident.longitude <=180:
-        raise HTTPExeption(
+        raise HTTPException(
             status_code=400,
             detail="Invalid longitude."
         )
