@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from src.database import test_connection, engine, Base
 from src.devices import router as devices_router  # 1. Importe o router de dispositivos
+from src.incidents import router as incidents_router
 
 # Cria as tabelas no banco de dados automaticamente se elas não existirem
 Base.metadata.create_all(bind=engine)
@@ -13,6 +14,7 @@ app = FastAPI(
 
 # 2. Inclua o router na aplicação
 app.include_router(devices_router)
+app.include_router(incidents_router)
 
 
 @app.get("/health")
